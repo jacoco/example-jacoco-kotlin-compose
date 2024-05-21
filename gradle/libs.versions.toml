@@ -1,0 +1,10 @@
+[versions]
+junit5 = "5.10.2"
+
+[plugins]
+compose = "org.jetbrains.compose:1.6.2"
+kotlin = "org.jetbrains.kotlin.jvm:1.9.23"
+
+[libraries]
+junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
+junit-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit5" }
