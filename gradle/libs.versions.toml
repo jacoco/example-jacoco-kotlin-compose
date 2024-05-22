@@ -1,9 +1,11 @@
 [versions]
+kotlin = "2.0.0"
 junit5 = "5.10.2"
 
 [plugins]
-compose = "org.jetbrains.compose:1.6.2"
-kotlin = "org.jetbrains.kotlin.jvm:1.9.23"
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose = "org.jetbrains.compose:1.6.10"
 
 [libraries]
 junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
