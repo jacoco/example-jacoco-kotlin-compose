@@ -5,7 +5,7 @@ junit5 = "5.11.0"
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-compose = "org.jetbrains.compose:1.7.1"
+compose = "org.jetbrains.compose:1.7.3"
 
 [libraries]
 junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
