@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.compose.compiler.gradle.ComposeFeatureFlag
+
 plugins {
     alias(libs.plugins.kotlin)
     alias(libs.plugins.compose.compiler)
@@ -31,4 +33,5 @@ dependencies {
 composeCompiler {
     includeTraceMarkers = true
     includeSourceInformation = true
+    featureFlags = setOf(ComposeFeatureFlag.PausableComposition./* workaround for https://github.com/jacoco/jacoco/issues/1911 */disabled())
 }
