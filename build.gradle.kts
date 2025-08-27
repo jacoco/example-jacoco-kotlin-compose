@@ -33,5 +33,5 @@ dependencies {
 composeCompiler {
     includeTraceMarkers = true
     includeSourceInformation = true
-    featureFlags = setOf(ComposeFeatureFlag.PausableComposition./* workaround for https://github.com/jacoco/jacoco/issues/1911 */disabled())
+    featureFlags = setOf(ComposeFeatureFlag.PausableComposition)
 }
