@@ -6,12 +6,12 @@ plugins {
 }
 
 jacoco {
-    toolVersion = "[0.8.13-SNAPSHOT,)"
+    toolVersion = "[0.8.14-SNAPSHOT,)"
 }
 
 repositories {
     maven {
-        url = uri("https://oss.sonatype.org/content/repositories/snapshots")
+        url = uri("https://central.sonatype.com/repository/maven-snapshots/")
         mavenContent {
             snapshotsOnly()
             includeGroup("org.jacoco")
