@@ -1,12 +1,14 @@
 [versions]
 kotlin = "2.3.20"
+compose = "1.10.3"
 junit5 = "5.11.4"
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-compose = "org.jetbrains.compose:1.10.3"
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
 
 [libraries]
+compose-ui-test-junit4 = { module = "org.jetbrains.compose.ui:ui-test-junit4", version.ref = "compose" }
 junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
 junit-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit5" }

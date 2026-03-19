@@ -25,7 +25,7 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
-    testImplementation(compose.desktop.uiTestJUnit4)
+    testImplementation(libs.compose.ui.test.junit4)
     testImplementation(libs.junit.api)
     testRuntimeOnly(libs.junit.engine)
 }
