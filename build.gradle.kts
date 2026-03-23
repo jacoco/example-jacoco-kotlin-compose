@@ -32,3 +32,10 @@ composeCompiler {
     includeTraceMarkers = true
     includeSourceInformation = true
 }
+
+tasks.test {
+    systemProperty(
+        // Prevents appearance of UI window during execution of tests
+        "java.awt.headless", "true"
+    )
+}
