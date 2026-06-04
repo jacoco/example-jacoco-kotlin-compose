@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.3.21"
+kotlin = "2.4.0"
 compose = "1.10.3"
 junit5 = "5.11.4"
 
