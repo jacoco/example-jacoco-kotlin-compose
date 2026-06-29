@@ -1,7 +1,7 @@
 [versions]
 kotlin = "2.3.21"
 compose = "1.10.3"
-junit5 = "5.11.4"
+junit5 = "6.1.1"
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
