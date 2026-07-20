@@ -14,11 +14,11 @@ class ExampleTest {
     @Test
     fun test() {
         compose.setContent {
-            example()
+            example(state = State(listOf("now")))
         }
-        compose.onNodeWithText("Click me").performClick()
+        compose.onNodeWithText("Click me now").performClick()
         compose.onNodeWithText("Click me again").performClick()
-        compose.onNodeWithText("Click me").assertDoesNotExist()
+        compose.onNodeWithText("Click me now").assertDoesNotExist()
         compose.onNodeWithText("Click me again").assertDoesNotExist()
     }
 
