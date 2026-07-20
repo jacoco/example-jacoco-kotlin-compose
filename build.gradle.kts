@@ -39,3 +39,9 @@ tasks.test {
         "java.awt.headless", "true"
     )
 }
+
+tasks.jacocoTestReport {
+    reports {
+        xml.required.set(true)
+    }
+}
