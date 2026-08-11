@@ -26,6 +26,7 @@ dependencies {
     testImplementation(libs.compose.ui.test.junit4)
     testImplementation(libs.junit.api)
     testRuntimeOnly(libs.junit.engine)
+    testImplementation(libs.asm.util)
 }
 
 composeCompiler {

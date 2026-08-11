@@ -2,6 +2,7 @@
 kotlin = "2.3.21"
 compose = "1.11.1"
 junit5 = "5.11.4"
+asm = "9.9.1"
 
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
@@ -12,3 +13,4 @@ compose = { id = "org.jetbrains.compose", version.ref = "compose" }
 compose-ui-test-junit4 = { module = "org.jetbrains.compose.ui:ui-test-junit4", version.ref = "compose" }
 junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
 junit-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit5" }
+asm-util = { module = "org.ow2.asm:asm-util", version.ref = "asm" }

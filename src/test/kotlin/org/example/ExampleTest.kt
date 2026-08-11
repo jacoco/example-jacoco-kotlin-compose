@@ -1,15 +1,11 @@
 package org.example
 
-import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
-import org.junit.Rule
+import org.jacoco.test.TestBase
 import org.junit.Test
 
-class ExampleTest {
-
-    @get:Rule
-    val compose = createComposeRule()
+class ExampleTest : TestBase() {
 
     @Test
     fun test() {
